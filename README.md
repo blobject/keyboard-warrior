@@ -1,39 +1,41 @@
 # keyboard-warrior
 
-FIXME: Write a one-line description of your library/project.
+Keyboard Warrior is a typing speed game that you can play on your web browser.
 
-## Overview
+The game is currently under development, and the "play" link below may not work. This project is a fresh venture into ClojureScript and web game development.
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+### play
 
-## Setup
+https://alocy.be/app/keyboard-warrior
 
-To get an interactive development environment run:
+### info
 
-    lein figwheel
+https://alocy.be/page/keyboard-warrior
 
-and open your browser at [localhost:3449](http://localhost:3449/).
-This will auto compile and send all changes to the browser without the
-need to reload. After the compilation process is complete, you will
-get a Browser Connected REPL. An easy way to try it is:
+### license
 
-    (js/alert "Am I connected?")
+[mit](https://raw.githubusercontent.com/agarick/keyboard-warrior/master/LICENSE)
 
-and you should see an alert in the browser window.
+### run locally
 
-To clean all compiled files:
+- clone
+- `lein figwheel`
+- visit `localhost:3449` in a browser
 
-    lein clean
+### anticipated features
 
-To create a production build run:
-
-    lein do clean, cljsbuild once min
-
-And open your browser in `resources/public/index.html`. You will not
-get live reloading, nor a REPL. 
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+- clean, minimal, and pleasant look & feel
+- highly responsive multi-play
+    - first with strangers, eventually in rooms/channels
+    - spectating support
+- various types of play
+    - single, multi
+    - time-limit, word-limit, no limit
+    - story
+    - combative
+- wide range of corpora
+    - literary
+    - programming
+    - news articles
+    - eventually support plugging in user-customised text
+- detailed statistics
