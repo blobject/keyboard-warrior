@@ -2,7 +2,7 @@
 
 Keyboard Warrior is a typing speed game that you can play on your web browser.
 
-The game is currently under development, and the "play" link below may not work. This project is a fresh venture into ClojureScript and web game development.
+The game is a fresh venture into ClojureScript and web game development. It is currently under development.
 
 ### play
 
@@ -18,8 +18,8 @@ https://alocy.be/page/keyboard-warrior
 
 ### run locally
 
-- clone
-- `lein figwheel`
+- [clone](https://git-scm.com/docs/git-clone)
+- `[lein](https://leiningen.org/) figwheel`
 - visit `localhost:3449` in a browser
 
 ### anticipated features

@@ -1,4 +1,4 @@
-(defproject kw "0.1.0-SNAPSHOT"
+(defproject keyboard-warrior "0.1.0-SNAPSHOT"
   :description "typing speed game"
   :url "https://alocy.be/app/keyboard_warrior"
   :license {:name "mit"}
@@ -16,8 +16,8 @@
   :cljsbuild {:builds
               [{:id "dev"
                 :source-paths ["src"]
-                :figwheel {:on-jsload "kw.core/on-js-reload"}
-                :compiler {:main kw.core
+                :figwheel {:on-jsload "keyboard-warrior.core/on-js-reload"}
+                :compiler {:main keyboard-warrior.core
                            :asset-path "js/compiled/out"
                            :output-to "resources/public/js/compiled/keyboard_warrior.js"
                            :output-dir "resources/public/js/compiled/out"
@@ -26,7 +26,7 @@
                {:id "min"
                 :source-paths ["src"]
                 :compiler {:output-to "resources/public/js/compiled/keyboard_warrior.js"
-                           :main kw.core
+                           :main keyboard-warrior.core
                            :optimizations :advanced
                            :pretty-print false}}]}
   :figwheel {
