@@ -22,16 +22,11 @@
                :speed new-s
                :gross-speed new-gs)))))
 
-(js/setInterval tick 1000)
-
 (defn keyboard-warrior []
   [:div {:class "frame"}
-   [:h1 "keyboard warrior"]
-   (view/stats)[:br]
-   (view/figure)[:br]
-   "---"[:br]
-   (view/replica)[:br][:br]
-   (view/last-key)[:br]
+   (view/top @state)
+   (view/middle @state)
+   (view/bottom @state)
    #_(view/debug)])
 
 (reagent/render-component
@@ -39,3 +34,6 @@
  (. js/document (getElementById "app")))
 
 (defn on-js-reload [])
+
+(.addEventListener js/document "keydown" input/press)
+(js/setInterval tick 1000)

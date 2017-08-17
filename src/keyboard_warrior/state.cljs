@@ -13,4 +13,5 @@
     :words 0
     :typed []
     :hit []
-    :last nil}))
+    :last "Start typing ..."
+    :last-type :not-printable}))

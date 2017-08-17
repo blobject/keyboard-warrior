@@ -1,2 +1,101 @@
 /* some style */
+.frame {
+  font-size: x-large;
+  padding: 50px;
+}
 
+.top {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Source Code Pro', SFMono-Regular, Consolas, monospace;
+  margin: 0 0 30px;
+}
+
+.left {
+  flex-basis: 50%;
+}
+
+.prompt {
+  display: inline-block;
+  color: #b0b0b0;
+  padding: 10px 20px;
+}
+
+.prompt.printable {
+  font-weight: bold;
+  color: #c0c0c0;
+}
+
+.center {
+  flex-basis: 400px;
+  padding: 0 20px;
+}
+
+.gross {
+  color: #a0a0a0;
+}
+
+.accuracy {
+  color: #8080ff;
+}
+
+.wrong {
+  color: #ff8080;
+}
+
+.duration {
+  font-size: 50px;
+  color: #b0b0b0;
+}
+
+.middle {
+  width: 100%;
+  text-align: center;
+}
+
+.figure {
+  font-family: 'Droid Serif', serif;
+  text-align: justify;
+  line-height: 1.8;
+  padding: 20px;
+}
+
+.good {
+  color: #000000;
+}
+
+.bad {
+  color: #ff0000;
+  background-color: #ffdcdc;
+  margin-left: -2px;
+  margin-right: -2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.rest {
+  color: #808080;
+}
+
+.link {
+  font-size: smaller;
+  list-style: none;
+  text-align: right;
+  margin: 90px 0 0;
+  padding: 0;
+}
+
+.link li {
+  display: inline;
+  margin-left: 30px;
+}
+
+.link li a {
+  color: #b0b0b0;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.link li a:focus, .link li a:hover {
+  color: #808080;
+}

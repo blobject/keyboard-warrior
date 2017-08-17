@@ -19,7 +19,7 @@ https://alocy.be/page/keyboard-warrior
 ### run locally
 
 - [clone](https://git-scm.com/docs/git-clone)
-- `[lein](https://leiningen.org/) figwheel`
+- [`lein`](https://leiningen.org/)` figwheel`
 - visit `localhost:3449` in a browser
 
 ### anticipated features
