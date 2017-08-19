@@ -14,4 +14,5 @@
     :typed []
     :hit []
     :last "Start typing ..."
-    :last-type :not-printable}))
+    :last-type :not-printable
+    :world {}}))

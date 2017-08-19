@@ -57,7 +57,9 @@
   font-family: 'Droid Serif', serif;
   text-align: justify;
   line-height: 1.8;
-  padding: 20px;
+  margin: 0 auto;
+  padding: 40px 80px;
+  max-width: 1000px;
 }
 
 .good {
@@ -77,11 +79,28 @@
   color: #808080;
 }
 
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 100px;
+}
+
+.world {
+  flex-basis: 30%;
+  font-size: smaller;
+  color: #b0b0b0;
+  margin-top: 50px;
+}
+
+.user-speed {
+  font-weight: bold;
+}
+
 .link {
   font-size: smaller;
   list-style: none;
   text-align: right;
-  margin: 90px 0 0;
   padding: 0;
 }
 

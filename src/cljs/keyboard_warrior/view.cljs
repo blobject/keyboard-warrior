@@ -40,8 +40,8 @@
 
 (defn format-duration [secs]
   (let [pad (partial goog-string/format "%02d")]
-    (str (if (> secs 3600) (-> secs (quot 3600) pad (str ":")))
-         (if (> secs 60) (-> secs (rem 3600) (quot 60) pad (str ":")))
+    (str (if (>= secs 3600) (-> secs (quot 3600) pad (str ":")))
+         (if (>= secs 60) (-> secs (rem 3600) (quot 60) pad (str ":")))
          (pad (rem secs 60)))))
 
 (defn duration [state]
@@ -57,11 +57,13 @@
     [:div {:class "figure"}
      (map-indexed
       (fn [i group]
-        (let [rights? (true? (last (first group)))
+        (let [[first-key first-val] (first group)
+              [last-key _] (last group)
+              rights? (true? first-val)
               class (if rights? "good" "bad")]
           [:span {:key i
                   :class (str "typed " class)}
-           (subs figure (ffirst group) (+ (first (last group)) 1))]))
+           (subs figure first-key (+ last-key 1))]))
       groups)
      [:span {:class "rest"} (subs figure hits (count figure))]]))
 
@@ -70,6 +72,25 @@
    (apply str (:typed state))])
 
 (defn help [])
+
+(defn world [state]
+  (let [list (map #(hash-map
+                    :user (name (first %))
+                    :speed (:speed (last %))
+                    :characters (:characters (last %)))
+                  (:world state))
+        users (reverse (sort-by :speed list))]
+    [:ol {:class "world"}
+     (map-indexed
+      (fn [i user]
+        [:li {:key i}
+         [:span {:class "user-name"}
+          (:user user) ": "]
+         [:span {:class "user-speed"}
+          (:speed user)]
+         [:span {:class "user-characters"}
+          " (" (:characters user) ")"]])
+      users)]))
 
 (defn link []
   [:ul {:class "link"}
@@ -93,7 +114,17 @@
 (defn bottom [state]
   [:div {:class "bottom"}
    (help)
+   (world state)
    (link)])
+
+(defn all [state]
+  [:div {:id "app"}
+   [:div {:class "frame"}
+    (top state)
+    (middle state)
+    (bottom state)
+    #_(view/debug)
+    ]])
 
 (defn debug [state]
   [:div {:class "debug" :style {:color "#808080"}}
