@@ -6,7 +6,7 @@ The game is a fresh venture into ClojureScript and web game development. It is c
 
 ### play
 
-https://alocy.be/app/keyboard-warrior
+https://alocy.be/dev/keyboard-warrior
 
 ### license
 

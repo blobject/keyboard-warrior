@@ -15,8 +15,8 @@
             :rel "stylesheet"}]
     [:link {:href "https://fonts.googleapis.com/css?family=Droid+Serif"
             :rel "stylesheet"}]
-    (h/include-css "/app/keyboard-warrior/css/style.css")]
+    (h/include-css "/dev/keyboard-warrior/css/style.css")]
    [:body
     [:div {:id "app"} "loading Keyboard Warrior ..."]
     [:script {:type "text/javascript"
-              :src "/app/keyboard-warrior/js/compiled/kw.js"}]]))
+              :src "/dev/keyboard-warrior/js/compiled/kw.js"}]]))

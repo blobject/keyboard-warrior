@@ -29,7 +29,7 @@
   (cc/GET  "/"     req (view/page req))
   (cc/GET  "/sock" req (ring-ajax-get-or-ws-handshake req))
   (cc/POST "/sock" req (ring-ajax-post req))
-  (cr/resources "/app/keyboard-warrior")
+  (cr/resources "/dev/keyboard-warrior")
   (cr/not-found "not found"))
 
 (def ring-handler

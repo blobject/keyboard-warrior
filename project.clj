@@ -1,6 +1,6 @@
 (defproject keyboard-warrior "0.1.0-SNAPSHOT"
   :description "typing speed game"
-  :url "https://alocy.be/app/keyboard-warrior"
+  :url "https://alocy.be/dev/keyboard-warrior"
   :license {:name "mit"}
   :min-lein-version "2.7.1"
   :dependencies [[org.clojure/clojure "1.8.0"]
