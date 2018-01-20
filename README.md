@@ -2,15 +2,11 @@
 
 Keyboard Warrior is a typing speed game that you can play on your web browser.
 
-The game is a fresh venture into ClojureScript and web game development. It is currently under development.
+The game is a fresh venture into ClojureScript and web game development. It is in alpha, development currently on hold.
 
 ### play
 
-https://alocy.be/dev/keyboard-warrior
-
-### license
-
-[mit](https://raw.githubusercontent.com/agarick/keyboard-warrior/master/LICENSE)
+~~[alocy.be/dev/keyboard-warrior](https://alocy.be/dev/keyboard-warrior)~~ (hosting currently unavailable)
 
 ### run locally
 

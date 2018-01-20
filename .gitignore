@@ -6,6 +6,7 @@ pom.xml
 /classes/
 /out/
 /target/
+.cljs_rhino_repl/
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/
