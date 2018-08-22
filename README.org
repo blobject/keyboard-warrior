@@ -1,21 +1,21 @@
-# keyboard-warrior
+* keyboard-warrior
 
 Keyboard Warrior is a typing speed game that you can play on your web browser.
 
 The game is a fresh venture into ClojureScript and web game development. It is in alpha, development currently on hold.
 
-### play
+*** play
 
-~~[agaric.net/dev/keyboard-warrior](https://agaric.net/dev/keyboard-warrior)~~ (hosting currently unavailable)
++[[https://agaric.net/dev/keyboard-warrior][agaric.net/dev/keyboard-warrior]]+ (hosting currently unavailable)
 
-### run locally
+*** run locally
 
-- [clone](https://git-scm.com/docs/git-clone)
-- [`lein`](https://leiningen.org/)` do clean; lein cljsbuild once min; lein run <port>`
+- [[https://git-scm.com/docs/git-clone][clone]]
+- [[https://leiningen.org/][lein]] =do clean; lein cljsbuild once min; lein run <port>=
     - first deploy the clientside scripts, then run the server
-- visit `localhost:<port>` in a browser
+- visit =localhost:<port>= in a browser
 
-### anticipated features
+*** anticipated features
 
 - clean, minimal, and pleasant look & feel
 - highly responsive multi-play
