@@ -6,7 +6,7 @@ The game is a fresh venture into ClojureScript and web game development. It is i
 
 *** play
 
-+[[https://agaric.net/dev/keyboard-warrior][agaric.net/dev/keyboard-warrior]]+ (hosting currently unavailable)
++[[https://b.agaric.net/dev/keyboard-warrior]]+ (hosting currently unavailable)
 
 *** run locally
 
